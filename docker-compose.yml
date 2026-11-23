@@ -9,7 +9,7 @@
 
 services:
   epr:
-    image: ghcr.io/gareth-power/epr:latest
+    image: ghcr.io/gstt-sail/epr:latest
     build: .                 # only used with `--build`; ignored by `pull`
     container_name: epr
     ports:

@@ -27,7 +27,7 @@ nothing else, not this repository or a GitHub account.
 With Docker Desktop installed and running, open a terminal and run:
 
 ```
-docker run -d --name epr -p 8080:8080 -v epr-data:/data --restart unless-stopped ghcr.io/gareth-power/epr:latest
+docker run -d --name epr -p 8080:8080 -v epr-data:/data --restart unless-stopped ghcr.io/gstt-sail/epr:latest
 ```
 
 That pulls the image from GitHub and starts it. Open:
@@ -40,9 +40,9 @@ Other computers on the same network use `http://<your-computer's-ip>:8080/`.
 **Update:**
 
 ```
-docker pull ghcr.io/gareth-power/epr:latest
+docker pull ghcr.io/gstt-sail/epr:latest
 docker rm -f epr
-docker run -d --name epr -p 8080:8080 -v epr-data:/data --restart unless-stopped ghcr.io/gareth-power/epr:latest
+docker run -d --name epr -p 8080:8080 -v epr-data:/data --restart unless-stopped ghcr.io/gstt-sail/epr:latest
 ```
 
 Patient data lives in the `epr-data` volume and is untouched by updates; schema

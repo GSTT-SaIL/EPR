@@ -2,7 +2,7 @@ name: Publish image
 
 # Builds the container image and pushes it to the GitHub Container Registry.
 #
-#   push to main       -> ghcr.io/gareth-power/epr:latest  (and :<short-sha>)
+#   push to main       -> ghcr.io/gstt-sail/epr:latest  (and :<short-sha>)
 #   push a tag v1.2.3  -> :1.2.3  :1.2  :latest
 #   "Run workflow"     -> :latest
 #
@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE: ghcr.io/gareth-power/epr
+  IMAGE: ghcr.io/gstt-sail/epr
 
 jobs:
   build-and-push:
